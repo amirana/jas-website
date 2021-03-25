@@ -1,0 +1,56 @@
+.footer{
+    padding: 50px 0;
+  ul{
+      list-style: none;
+  }
+  .logo{
+      width: 150px;
+      margin: 0 auto;
+  }
+  .footer-navigation{
+      display: flex;
+      justify-content: center;
+      li{
+          margin-right: 40px;
+          &:last-child{
+              margin-right: 0;
+          }
+          a{
+            font-family: 'Montserrat SemiBold';
+            position: relative;
+                &:after{
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    display: inline-block;
+                    background: #000;
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    transition: 0.4s width ease;
+                }
+                &:hover{
+                    &:after{
+                        width: 100%;
+                    }
+                }
+          }
+      }
+  }
+
+  .social-media{
+    display: flex;
+    justify-content: center;
+    li{
+        margin-right: 40px;
+        &:last-child{
+            margin-right: 0;
+        }
+        a{
+            img{
+                width: 25px;
+            }
+        }
+    }
+  }
+}

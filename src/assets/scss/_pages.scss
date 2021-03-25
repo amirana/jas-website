@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../font/Montserrat-Light.woff2') format('woff2'),
+        url('../font/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    src: url('../font/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../font/Montserrat-SemiBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../font/Montserrat-Bold.woff2') format('woff2'),
+        url('../font/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../font/Montserrat-Regular.woff2') format('woff2'),
+        url('../font/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #C0C0C0;
+
+*, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat Regular';
+    font-size: 14px;
+}
+img{
+    width: 100%;
+}
+
+a{
+    display: inline-block;
+    color: $color-black;
+    text-decoration: none;
+}
+
+p{
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    font-family: 'Montserrat Bold';
+}
+h2, .section_title{
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.color-gray{
+    color: $color-gray;
+    font-family: 'Montserrat SemiBold';
+}
+.section_padding{
+    padding: 80px 0;
+}
+
+.section_title{
+    span{
+        font-family: 'Montserrat Light';
+        font-size: 12px;
+        vertical-align: super;
+        margin-right: 8px;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.mobile-view{
+    display: none;
+}
+
+// Main banner slider
+.main-banner-slider{
+    .slick-slide{
+        &:focus{
+            outline: none;
+        }
+    }
+    .slick-dots{
+        bottom: -40px;
+        li{
+            button{
+                &:before{
+                    content: '';
+                    border: 2px solid $color-black;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
+                }
+            }
+            &.slick-active{
+                button{
+                    &:before{
+                        background: $color-black;
+                    }
+                }
+            }
+        }
+    }
+}
+// The creators
+.content{
+    margin-top: 40px;
+}
+
+.content-title{
+    margin-bottom: 30px;
+    a, h3{
+        padding-bottom: 10px;
+    }
+}
+
+// Editorials
+.editorials-block{
+    .editorials-content{
+        margin-bottom: 100px;  
+    }
+    .editorials-img{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    .editorials-title{
+        font-family: 'Montserrat Bold';
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+
+// Features
+.features {
+    background: $color-black;
+    color: $color-white;
+}
+.features-video{
+    position: relative;
+    margin: 80px 0;
+    .play-btn{
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        right: 0;
+        width: 150px;
+        margin: 0 auto;
+        cursor: pointer;
+        box-shadow: 5px 5px 39px 13px rgba(80, 17, 17, 0.24);
+        -webkit-box-shadow: 5px 5px 39px 13px rgba(80, 17, 17, 0.24);
+        -moz-box-shadow: 5px 5px 39px 13px rgba(80, 17, 17, 0.24);
+    }
+}
