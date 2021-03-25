@@ -7,9 +7,11 @@
   "author": "Harshad <harshad@fastscale.in>",
   "license": "MIT",
   "scripts": {
+    "build": "gulp",
     "serve": "gulp localhost"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@popperjs/core": "^2.4.4",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",

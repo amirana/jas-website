@@ -15,13 +15,14 @@ const rename = require('gulp-rename')
 const node_path = "node_modules/";
 const srcJS = [
   node_path + "jquery/dist/jquery.min.js", 
-  node_path + "@popperjs/core/dist/umd/popper.min.js", 
+  // node_path + "@popperjs/core/dist/umd/popper.min.js", 
   //node_path + "bootstrap/dist/js/bootstrap.min.js", 
-  node_path + "waypoints/lib/jquery.waypoints.js", 
-  node_path + "waypoints/lib/shortcuts/sticky.min.js", 
-  node_path + "floatthead/dist/jquery.floatThead.min.js",
+  // node_path + "waypoints/lib/jquery.waypoints.js", 
+  // node_path + "waypoints/lib/shortcuts/sticky.min.js", 
+  // node_path + "floatthead/dist/jquery.floatThead.min.js",
   node_path + "slick-carousel/slick/slick.min.js",
-  node_path + "aos/dist/aos.js"
+  node_path + "@fancyapps/fancybox/dist/jquery.fancybox.min.js",
+  // node_path + "aos/dist/aos.js"
 ];
 
 gulp.task("pack-js", function () {
