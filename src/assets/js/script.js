@@ -4,6 +4,16 @@ $(window).load(function() {
 });
 */
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 $('.main-banner-slider').slick({
 	infinite: true,
 	slidesToShow: 1,

@@ -52,7 +52,7 @@ img{
 }
 
 a{
-    display: inline-block;
+    display: block;
     color: $color-black;
     text-decoration: none;
 }
@@ -149,16 +149,42 @@ h3{
 .editorials-block{
     .editorials-content{
         margin-bottom: 100px;  
+        a{
+            width: 70%;
+            margin: 0 auto;
+            .editorials-img{
+                margin-bottom: 30px;
+            }
+            .editorials-title{
+                font-family: 'Montserrat Bold';
+                display: inline-block;
+                padding-bottom: 10px;
+                position: relative;
+                &:after{
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    display: inline-block;
+                    background: #000;
+                    position: absolute;
+                    bottom: 7px;
+                    left: 0;
+                    transition: 0.4s width ease;
+                }
+            }
+            .date{
+                display: block;
+            }
+            &:hover{
+                .editorials-title{
+                    &:after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
-    .editorials-img{
-        width: 70%;
-        margin-bottom: 30px;
-    }
-    .editorials-title{
-        font-family: 'Montserrat Bold';
-        display: block;
-        padding-bottom: 10px;
-    }
+    
 }
 
 // Features
