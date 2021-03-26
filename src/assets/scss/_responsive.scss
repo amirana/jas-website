@@ -73,10 +73,18 @@
         z-index: 10;
     }
 
-    .editorials-block .editorials-img{
+    .editorials-block .editorials-content a .editorials-img{
         width: 100%;
+        margin-bottom: 20px;
     }
 
+    .editorials-block .editorials-content a{
+        width: 90%;
+    }
+    
+    .editorials-block .editorials-content {
+        margin-bottom: 50px;
+    }
     .features-video .play-btn{
         width: 100px;
     }
