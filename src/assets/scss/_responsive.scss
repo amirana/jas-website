@@ -44,9 +44,9 @@
         .logo{
             text-align: center;
         }
-        .logo img{
-            width: 120px;
-        }
+    }
+    .logo img{
+        width: 120px;
     }
     .mobile-navigation {
         position: fixed;
@@ -124,5 +124,25 @@
             }
         }
     }
-    
+    .lyf-video-section{
+        height: auto;
+    }
+
+    .lyf-bottom-section{
+        height: auto;
+        h1{
+            font-size: 30px; 
+        }
+        .credit-text {
+            li{
+                display: block;
+                p{
+                    font-size: 22px;
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }

@@ -34,6 +34,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Proxima Nova Thin';
+    src: url('../font/ProximaNovaSExCn-Thin.woff2') format('woff2'),
+        url('../font/ProximaNovaSExCn-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 $color-black: #000;
 $color-white: #fff;
 $color-gray: #C0C0C0;
@@ -209,4 +218,53 @@ h3{
         -webkit-box-shadow: 5px 5px 39px 13px rgba(80, 17, 17, 0.24);
         -moz-box-shadow: 5px 5px 39px 13px rgba(80, 17, 17, 0.24);
     }
+}
+
+// LYF Page
+
+.lyf-video-section{
+    height: 100vh;
+    video{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+
+.lyf-bottom-section{
+    background: url(../img/lyf-bg.jpg)no-repeat center center;
+    background-size: cover;
+    font-family: 'Proxima Nova Thin';
+    height: 100vh;
+    color: $color-white;
+    h1{
+        font-size: 50px;
+        letter-spacing: 0.2em;
+        margin-bottom: 40px;
+        span{
+            display: block;
+        }
+    }
+   .credit-text{
+       li{
+           display: flex;
+           justify-content: center;
+           span{
+               font-size: 20px;
+               margin-right: 8px;
+           }
+           p{
+               font-size: 30px;
+               margin-right: 12px;
+               margin-bottom: 10px;
+           }
+       }
+   }
+   .social-media{
+        margin-top: 10%;
+        margin-bottom: 5%;
+   }
 }
