@@ -224,6 +224,7 @@ h3{
 
 .lyf-video-section{
     height: 100vh;
+    pointer-events: none;
     video{
         display: block;
         width: 100%;
