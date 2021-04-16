@@ -1,83 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LYF</title>
-    <meta name="robots" content="index, follow" />
-    <meta name="description" content="" />
-    <meta name="keyword" content="" />
-    <meta name="author" content="Ami Rana" />
-    <!-- Compiled and minified CSS <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LYF</title>
+		<meta name="robots" content="index, follow" />
+		<meta name="description" content="" />
+		<meta name="keyword" content="" />
+		<meta name="author" content="Ami Rana" />
+		<!-- Compiled and minified CSS <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
                     
 -->
-    <link rel="stylesheet" href="assets/css/main.min.css" />
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="theme-color" content="#222222" />
-</head>
-<body>
-    <header class="header absolute-header">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-12 col-12">
-                    <a href="index.html" class="logo"><img src="assets/img/logo-white.png" alt="" /></a>
-                </div>
-            </div>
-        </div>
-    </header>
+		<link rel="stylesheet" href="assets/css/main.min.css" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<meta name="theme-color" content="#222222" />
+	</head>
+	<body>
+		<header class="header absolute-header">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-md-12 col-12">
+						<a href="index.html" class="logo"><img src="assets/img/logo-white.png" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <!-- Main Video Section -->
-    <section class="lyf-video-section">
-        <!-- <video autoplay loop>
-            <source src="assets/img/lyf-video.mp4" type="video/mp4">
-        </video> -->
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O3u4UXMvtjM?rel=0&autoplay=1&loop=1;&playlist=O3u4UXMvtjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+		<!-- Main Video Section -->
+		<section class="lyf-video-section">
+            <div class="video-container">
+            <!--
+			<video autoplay loop controls="false">
+                <source src="assets/img/lyf-video.mp4" type="video/mp4">    
+            </video>
+            -->	
+            <!--
+            Youtube video ID : O3u4UXMvtjM
+            
+            <iframe style="position: absolute; top: 0; left: 0;" src="https://www.youtube.com/embed/O3u4UXMvtjM?autoplay=1&controls=0&loop=1&playlist=O3u4UXMvtjM&amp;showinfo=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+           -->
+           <!-- <div id="player"></div> -->
+           <iframe id="ytplayer" type="text/html" width="1200" height="675"
+src="https://www.youtube.com/embed/?autoplay=1&cc_load_policy=1&disablekb=1&fs=0&loop=1&modestbranding=1&playlist=O3u4UXMvtjM&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe>
+           </div>
+        </section>
 
-    <footer class="lyf-bottom-section footer">
-        <div class="container">
-            <div class="row justify-content-center align-items-center text-center">
-                <div class="col-md-12"> 
-                    <h1> <span>LIVE YOUR</span> <span>FAIRY TALE</span></h1>
-                    <ul class="credit-text">
-                        <li>
-                            <p><span>PRODUCED BY</span>BLOW BROADCAST</p>
-                            <p><span>DIRECTED BY</span>ARSALA QUREISHI / JAS SAGU</p>
-                        </li>
-                        <li>
-                            <p><span>MUSIC BY</span>REMEMBER THE FUTURE (CROATIA)</p>
-                            <p><span>SOUND DESIGN</span>JARVIS MARCEDO</p>
-                            <p><span>EDITED BY</span>HUZEFA LOKHANDWALA</p>
-                        </li>
-                        <li>
-                            <p><span>ASSISTANT EDITOR</span>PRABIR SOMESHWAR</p>
-                            <p><span>CINEMATOGRAPHER</span>SUMIT WANKHEDE / DILPREET SINGH KOHLI</p>
-                        </li>
-                        <li>
-                            <p><span>EDITED AT</span>PRIME FOCUS INDIA</p>
-                            <p><span>MOTION GRAPHICS</span>RINNYNAIK</p>
-                        </li>
-                    </ul>
 
-                    <ul class="social-media">
-                        <li>
-                            <a href=" https://instagram.com/broadcastblow?igshid=1t46o29aeafcy"><img src="assets/img/social-instagram-white.svg" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCziVl-yuz-8OEXhI8A5dIMg"><img src="assets/img/social-utube-white.svg" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="assets/img/social-twitter-white.svg" alt="" /></a>
-                        </li>
-                    </ul>
 
-                    <a href="index.html" class="logo"><img src="assets/img/logo-white.png" alt="" /></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
+		<footer class="lyf-bottom-section footer">
+			<div class="container">
+				<div class="row justify-content-center align-items-center text-center">
+					<div class="col-md-12">
+						<h1><span>LIVE YOUR</span> <span>FAIRY TALE</span></h1>
+						<ul class="credit-text">
+							<li>
+								<p><span>PRODUCED BY</span>BLOW BROADCAST</p>
+								<p><span>DIRECTED BY</span>ARSALA QUREISHI / JAS SAGU</p>
+							</li>
+							<li>
+								<p><span>MUSIC BY</span>REMEMBER THE FUTURE (CROATIA)</p>
+								<p><span>SOUND DESIGN</span>JARVIS MARCEDO</p>
+								<p><span>EDITED BY</span>HUZEFA LOKHANDWALA</p>
+							</li>
+							<li>
+								<p><span>ASSISTANT EDITOR</span>PRABIR SOMESHWAR</p>
+								<p><span>CINEMATOGRAPHER</span>SUMIT WANKHEDE / DILPREET SINGH KOHLI</p>
+							</li>
+							<li>
+								<p><span>EDITED AT</span>PRIME FOCUS INDIA</p>
+								<p><span>MOTION GRAPHICS</span>RINNYNAIK</p>
+							</li>
+						</ul>
+
+						<ul class="social-media">
+							<li>
+								<a href=" https://instagram.com/broadcastblow?igshid=1t46o29aeafcy"><img src="assets/img/social-instagram-white.svg" alt="" /></a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/channel/UCziVl-yuz-8OEXhI8A5dIMg"><img src="assets/img/social-utube-white.svg" alt="" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="assets/img/social-twitter-white.svg" alt="" /></a>
+							</li>
+						</ul>
+
+						<a href="index.html" class="logo"><img src="assets/img/logo-white.png" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+        <!--
+        <script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+      
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player;
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                videoId: 'O3u4UXMvtjM',
+                loop: true,
+                events: {
+                  'onReady': onPlayerReady,
+                  'onStateChange': onPlayerStateChange
+                }
+              });
+            }
+      
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+                console.log('Play'); 
+              event.target.playVideo();
+            }
+      
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = false;
+            function onPlayerStateChange(event) {
+              if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 6000);
+                done = true;
+              }
+            }
+            function stopVideo() {
+              player.stopVideo();
+            }
+          </script>]
+        -->
+	</body>
 </html>
