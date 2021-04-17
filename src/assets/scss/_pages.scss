@@ -277,11 +277,16 @@ h3 {
     background: url(../img/lyf-bg.jpg) no-repeat bottom center;
     background-size: cover;
     font-family: 'Proxima Nova Thin';
-    height: 100vh;
     color: $color-white;
+    &.footer{
+        padding:0;
+    }
+    .row{
+        min-height: 100vh;
+    }
 
     h1 {
-        font-size: 50px;
+        font-size: 4rem;
         letter-spacing: 0.2em;
         margin-bottom: 40px;
 
@@ -309,7 +314,7 @@ h3 {
     }
 
     .social-media {
-        margin-top: 10%;
-        margin-bottom: 5%;
+        margin-top: 7%;
+        margin-bottom: 2%;
     }
 }
