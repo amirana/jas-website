@@ -9,6 +9,8 @@
 		<meta name="description" content="" />
 		<meta name="keyword" content="" />
 		<meta name="author" content="Ami Rana" />
+        <link rel="preload" as="link" href="assets/img/lyf-video.mp4">
+
 		<!-- Compiled and minified CSS <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
                     
 -->
@@ -19,6 +21,7 @@
 		<meta name="theme-color" content="#222222" />
 	</head>
 	<body>
+        <div id="app">
 		<header class="header absolute-header">
 			<div class="container-fluid">
 				<div class="row align-items-center">
@@ -31,28 +34,32 @@
 
 		<!-- Main Video Section -->
 		<section class="lyf-video-section">
-            <div class="video-container">
-            <!--
-			<video autoplay loop controls="false">
-                <source src="assets/img/lyf-video.mp4" type="video/mp4">    
-            </video>
-            -->	
-            <!--
+			<div class="video-container">
+				<video id="video" title="intro" playsinline webkit-playsinline loop muted>
+                    <source src="assets/img/lyf-video.mp4" type="video/mp4">
+                </video>
+				<!--
             Youtube video ID : O3u4UXMvtjM
+
+            https://www.googleapis.com/drive/v3/files/19TN0urjBasR1cj6HqjA_8JGqiDG5Kagj
+
+            https://drive.google.com/file/d/19TN0urjBasR1cj6HqjA_8JGqiDG5Kagj/view?usp=sharing
             
             <iframe style="position: absolute; top: 0; left: 0;" src="https://www.youtube.com/embed/O3u4UXMvtjM?autoplay=1&controls=0&loop=1&playlist=O3u4UXMvtjM&amp;showinfo=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
            -->
-           <!-- <div id="player"></div> -->
+				<!-- <div id="player"></div> 
            <iframe id="ytplayer" type="text/html" width="1200" height="675"
 src="https://www.youtube.com/embed/?autoplay=1&cc_load_policy=1&disablekb=1&fs=0&loop=1&modestbranding=1&playlist=O3u4UXMvtjM&playsinline=1&color=white&iv_load_policy=3"
 frameborder="0" allowfullscreen></iframe>
-           </div>
-        </section>
-
-
+           -->
+           <iframe id="ytplayer" type="text/html" width="1200" height="675"
+src="https://www.youtube.com/embed/?autoplay=1&cc_load_policy=1&disablekb=1&fs=0&loop=1&modestbranding=1&playlist=O3u4UXMvtjM&playsinline=1&color=white&iv_load_policy=3"
+frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
 
 		<footer class="lyf-bottom-section footer">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row justify-content-center align-items-center text-center">
 					<div class="col-md-12">
 						<h1><span>LIVE YOUR</span> <span>FAIRY TALE</span></h1>
@@ -93,7 +100,34 @@ frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</footer>
+        </div>
         <!--
+        <script src="assets/js/bundle-min.js" type="text/javascript"></script>
+
+        <script>
+            const app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!',
+                    video: null
+                },
+                created(){
+                    console.log('created');
+                    this.video = document.getElementById('video');
+                    this.video.play();
+                }
+            })
+        </script>
+		<script>
+            // Later on, after some condition has been met, set video source to the
+            // preloaded video URL.
+            video.src = 'assets/img/lyf-video.mp4';
+            video.play().then(() => {
+              // If preloaded video URL was already cached, playback started immediately.
+              video.muted = false;
+            });
+          </script>
+		
         <script>
             // 2. This code loads the IFrame Player API code asynchronously.
             var tag = document.createElement('script');

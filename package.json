@@ -21,6 +21,7 @@
     "materialize-css": "^1.0.0",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^1.5.2",
+    "vue": "^2.6.12",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {

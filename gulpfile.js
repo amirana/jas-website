@@ -8,8 +8,6 @@ const concat = require("gulp-concat");
 const minify = require("gulp-minify");
 const rename = require('gulp-rename')
 
-
-
 // Node Modules JS to build.js Bundle
 // Reference : https://www.toptal.com/javascript/optimize-js-and-css-with-gulp
 const node_path = "node_modules/";
@@ -22,6 +20,7 @@ const srcJS = [
   // node_path + "floatthead/dist/jquery.floatThead.min.js",
   node_path + "slick-carousel/slick/slick.min.js",
   node_path + "@fancyapps/fancybox/dist/jquery.fancybox.min.js",
+  node_path + "vue/dist/vue.js",
   // node_path + "aos/dist/aos.js"
 ];
 
